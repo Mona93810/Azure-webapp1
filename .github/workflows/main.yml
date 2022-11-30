@@ -9,7 +9,7 @@ on:
     - cron: '0 9 * * 1'
 
 env:
-  AZURE_WEBAPP_NAME: current-time-service
+  AZURE_WEBAPP_NAME: current-time-app
   AZURE_WEBAPP_PACKAGE_PATH: "./publish"
 
 jobs:
