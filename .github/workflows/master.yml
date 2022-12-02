@@ -1,13 +1,14 @@
 name: Publish 🚀
 
 on:
-  workflow_dispatch:
-  push:
-    branches:
-    - master
+  pull_request:
+   branches:
+    -dev
+    -QA
+    -release
+   types: [closed]
   schedule:
-    - cron: '0 9 * * 1'
-
+    - cron: '0 9 * * 1
 env:
   AZURE_WEBAPP_NAME: current-times-service
   AZURE_WEBAPP_PACKAGE_PATH: "./publish"
