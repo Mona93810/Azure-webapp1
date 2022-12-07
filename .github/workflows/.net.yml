@@ -11,8 +11,6 @@ on:
         - dev
         - QA
         - release
-         schedule:
-        - cron: '0 9 * * 1'
 
 env:
   AZURE_WEBAPP_NAME: current-time-app
