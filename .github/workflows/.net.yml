@@ -4,13 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-     -main
-  pull_request:
-        branches:
-        - main
-        - dev
-        - QA
-        - release
+     -master
 
 env:
   AZURE_WEBAPP_NAME: current-time-app
